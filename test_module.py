@@ -20,16 +20,16 @@ class DemographicAnalyzerTestCase(unittest.TestCase):
         expected = 16.4
         self.assertAlmostEqual(actual, expected, msg="Expected different value for percentage with Bachelors degrees.")
 
-    # def test_higher_education_rich(self):
-    #     actual = self.data['higher_education_rich']
-    #     expected = 46.5
-    #     self.assertAlmostEqual(actual, expected, msg="Expected different value for percentage with higher education that earn >50K.")
-    #
-    # def test_lower_education_rich(self):
-    #     actual = self.data['lower_education_rich']
-    #     expected = 17.4
-    #     self.assertAlmostEqual(actual, expected, msg="Expected different value for percentage without higher education that earn >50K.")
-    #
+    def test_higher_education_rich(self):
+        actual = self.data['higher_education_rich']
+        expected = 46.5
+        self.assertAlmostEqual(actual, expected, msg="Expected different value for percentage with higher education that earn >50K.")
+
+    def test_lower_education_rich(self):
+        actual = self.data['lower_education_rich']
+        expected = 17.4
+        self.assertAlmostEqual(actual, expected, msg="Expected different value for percentage without higher education that earn >50K.")
+
     # def test_min_work_hours(self):
     #     actual = self.data['min_work_hours']
     #     expected = 1
